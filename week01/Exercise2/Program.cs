@@ -4,29 +4,64 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Ask for grade percentage and set variables.
         Console.Write("What is your grade percentage? ");
         int grade_percent = int.Parse(Console.ReadLine());
-        string letter_grade;
+        string letter;
 
-        if (grade_percent >= 90)
+        // Determine letter grade, including "+" and "-" symbols.
+        if (grade_percent >= 93)
         {
-            letter_grade = "A";
+            letter = "A";
+        }
+        else if (grade_percent >= 90)
+        {
+            letter = "A-";
+        }
+        else if (grade_percent >= 87)
+        {
+            letter = "B+";
+        }
+        else if (grade_percent >= 83)
+        {
+            letter = "B";
         }
         else if (grade_percent >= 80)
         {
-            letter_grade = "B";
+            letter = "B-";
+        }
+        else if (grade_percent >= 77)
+        {
+            letter = "C+";
+        }
+        else if (grade_percent >= 73)
+        {
+            letter = "C";
         }
         else if (grade_percent >= 70)
         {
-            letter_grade = "C";
+            letter = "C-";
+        }
+        else if (grade_percent >= 67)
+        {
+            letter = "D+";
+        }
+        else if (grade_percent >= 63)
+        {
+            letter = "D";
         }
         else if (grade_percent >= 60)
         {
-            letter_grade = "D";
+            letter = "D-";
         }
-        else letter_grade = "F";
+        else letter = "F";
 
-        Console.WriteLine($"You have earned the letter grade: {letter_grade}");
+        // Determine if user has failed or passed the course and display the corresponding message.
+        if (grade_percent >= 70)
+        {
+            Console.WriteLine($"Congratulations, you have passed the course! You have earned a letter grade of: {letter}.");
+        }
+        else Console.WriteLine($"Unfortunately, you have failed the course. You have earned a letter grade of: {letter}. You can do it, next time!");
 
     }
 }
