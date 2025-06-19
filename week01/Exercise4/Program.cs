@@ -6,6 +6,7 @@ class Program
     {
         /// Set user number and give program instructions.
         int user_number = -1;
+        List<int> numbers = new List<int>();
 
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
@@ -14,6 +15,15 @@ class Program
         {
             Console.WriteLine("Enter number: ");
             user_number = int.Parse(Console.ReadLine());
+            if (user_number != 0)
+            {
+                numbers.Add(user_number);
+            }
+        }
+
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
         }
     }
 }
