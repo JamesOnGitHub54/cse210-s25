@@ -13,7 +13,7 @@ class Program
         /// Continue to enter numbers until 0 is typed.
         while (user_number != 0)
         {
-            Console.WriteLine("Enter number: ");
+            Console.Write("Enter number: ");
             user_number = int.Parse(Console.ReadLine());
             if (user_number != 0)
             {
@@ -21,9 +21,18 @@ class Program
             }
         }
 
+        // Finding the sum of all numbers.
+        int sum = 0;
         foreach (int number in numbers)
         {
-            Console.WriteLine(number);
+            sum = sum + number;
         }
+
+        // Finding the average of all numbers.
+
+        // Finding the largest number of all numbers.
+
+        // Display all results.
+        Console.WriteLine($"Sum is: {sum}");
     }
 }
