@@ -4,13 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        /// Set user number and give program instructions.
+        /// Set user number and list. Give program instructions.
         int user_number = -1;
         List<int> numbers = new List<int>();
 
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
-        /// Continue to enter numbers until 0 is typed.
+        /// Add numbers to list until 0 is typed.
         while (user_number != 0)
         {
             Console.Write("Enter number: ");
@@ -33,8 +33,16 @@ class Program
         float average = sum / count_of_numbers;
 
         // Finding the largest number of all numbers.
+        int largest_number = user_number;
+        foreach (int number in numbers)
+        {
+            if (number > largest_number)
+            {
+                largest_number = number;
+            }
+        }
 
         // Display all results.
-        Console.WriteLine($"Sum is: {sum}/Average is: {average}");
+        Console.WriteLine($"The Sum is: {sum}\nThe average is: {average}\nThe largest number is: {largest_number}");
     }
 }
