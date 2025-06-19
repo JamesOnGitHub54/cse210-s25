@@ -29,10 +29,12 @@ class Program
         }
 
         // Finding the average of all numbers.
+        float count_of_numbers = numbers.Count;
+        float average = sum / count_of_numbers;
 
         // Finding the largest number of all numbers.
 
         // Display all results.
-        Console.WriteLine($"Sum is: {sum}");
+        Console.WriteLine($"Sum is: {sum}/Average is: {average}");
     }
 }
