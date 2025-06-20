@@ -18,9 +18,28 @@ class Program
         job2._startYear = "2020";
         job2._endYear = "2022";
 
-        // Display jobs.
-        job1.Display();
-        job2.Display();
+        // Creating job 3
+        Job job3 = new Job();
+        job3._jobTitle = "Actor";
+        job3._company = "Fox";
+        job3._startYear = "2000";
+        job3._endYear = "Present";
+
+        // Creating a new resume with a set name. Moves specified jobs to resume.
+        Resume resume1 = new Resume();
+        resume1._name = "Bob Hill";
+        resume1._jobs.Add(job1);
+        resume1._jobs.Add(job2);
+
+        // Creating resume 2
+        Resume resume2 = new Resume();
+        resume2._name = "Peter Smith";
+        resume2._jobs.Add(job3);
+
+        // Display results.
+        resume1.Display();
+        Console.WriteLine();
+        resume2.Display();
 
 
 
