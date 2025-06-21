@@ -17,15 +17,30 @@ class Program
             userSelection = int.Parse(Console.ReadLine());
 
             // 1. Write
-            
+            if (userSelection == 1)
+            {
+
+            }
 
             // 2. Display
+            else if (userSelection == 2)
+            {
+
+            }
 
             // 3. Load
+            else if (userSelection == 3)
+            {
+
+            }
 
             // 4. Save
+            else if (userSelection == 4)
+            {
 
-            // 5. Quit
+            }
+            else if (userSelection !=5)
+            Console.WriteLine("Invalid selection");
 
         }
         
