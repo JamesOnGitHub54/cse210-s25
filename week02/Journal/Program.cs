@@ -19,6 +19,12 @@ class Program
             // 1. Write
             if (userSelection == 1)
             {
+                Journal journal = new Journal();
+                Entry entry1 = new Entry();
+                PromptGenerator prompt1 = new PromptGenerator();
+                Console.WriteLine(prompt1.GetRandomPrompt());
+                
+                
 
             }
 
@@ -39,8 +45,8 @@ class Program
             {
 
             }
-            else if (userSelection !=5)
-            Console.WriteLine("Invalid selection");
+            else if (userSelection != 5)
+                Console.WriteLine("Invalid selection");
 
         }
         
