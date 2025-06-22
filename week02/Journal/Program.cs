@@ -6,6 +6,7 @@ class Program
     {
         int userSelection = -1;
         Console.WriteLine("Welcome to the Journal Program!");
+        Journal journal1 = new Journal();
 
         while (userSelection != 5)
         {
@@ -19,11 +20,9 @@ class Program
             // 1. Write
             if (userSelection == 1)
             {
-                Journal journal = new Journal();
                 Entry entry1 = new Entry();
-                PromptGenerator prompt1 = new PromptGenerator();
-                Console.WriteLine(prompt1.GetRandomPrompt());
-                
+                journal1.AddEntry(entry1);
+                journal1.DisplayAll();
                 
 
             }
@@ -31,7 +30,7 @@ class Program
             // 2. Display
             else if (userSelection == 2)
             {
-
+                journal1.DisplayAll();
             }
 
             // 3. Load

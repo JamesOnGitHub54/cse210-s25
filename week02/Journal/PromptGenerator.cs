@@ -19,8 +19,7 @@ public class PromptGenerator
 
         // Generate a random index number to pull the prompt from the list.
         Random randomGenerator = new Random();
-        int number = randomGenerator.Next(1, promptSize + 1);
-
+        int number = randomGenerator.Next(0, promptSize);
 
         // Return the string prompt from the random index.
         return _prompts[number];
