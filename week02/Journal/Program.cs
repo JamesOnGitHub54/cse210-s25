@@ -23,7 +23,7 @@ class Program
                 Entry entry1 = new Entry();
                 journal1.AddEntry(entry1);
                 journal1.DisplayAll();
-                
+
 
             }
 
@@ -36,12 +36,17 @@ class Program
             // 3. Load
             else if (userSelection == 3)
             {
-
+                Console.Write("What is the name of the file?: ");
+                string file_name = Console.ReadLine();
+                journal1.LoadToFile(file_name);
             }
 
             // 4. Save
             else if (userSelection == 4)
             {
+                Console.Write("What is the name of the file?: ");
+                string file_name = Console.ReadLine();
+                journal1.SaveToFile(file_name);
 
             }
             else if (userSelection != 5)
