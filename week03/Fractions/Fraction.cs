@@ -54,8 +54,11 @@ public class Fraction
     }
 
     // Create a method called GetDecimalValue that returns a double that is the result of dividing the top number by the bottom number.
+    /* Explicit Casting, learned on W3Schools, resolves issue of division not returning a decimal value.
+    Makes both _top and _bottom a double to return a double result. Also used in sample solution.
+    Source: https://www.w3schools.com/cs/cs_type_casting.php */
     public double GetDecimalValue()
     {
-        return _top / _bottom;
+        return (double)_top / (double)_bottom;
     }
 }

@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Fractions:\n");
-
         // Creating fractions with different constructors.
         Fraction fraction1 = new Fraction();
         Fraction fraction2 = new Fraction(6);
@@ -28,11 +26,7 @@ class Program
         Console.WriteLine(fraction4.GetFractionString());
         Console.WriteLine(fraction4.GetDecimalValue());
 
-
-
-
-
-        /**     Commenting out previous tests to test for assignment sample output.
+        /*     Commenting out previous tests to test for assignment sample output.
                                 // Testing Setters.
                                 fraction1.SetTop(6);
                                 fraction2.SetTop(2);
@@ -51,6 +45,6 @@ class Program
                                 Console.Write(fraction3.GetTop());
                                 Console.Write("/");
                                 Console.WriteLine(fraction3.GetBottom());
-                                **/
+                                */
     }
 }
