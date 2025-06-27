@@ -50,12 +50,12 @@ public class Fraction
     // Create a method called GetFractionString that returns the fraction in the form 3/4.
     public string GetFractionString()
     {
-        return "";
+        return $"{_top}/{_bottom}";
     }
 
     // Create a method called GetDecimalValue that returns a double that is the result of dividing the top number by the bottom number.
     public double GetDecimalValue()
     {
-        return 0;
+        return _top / _bottom;
     }
 }
