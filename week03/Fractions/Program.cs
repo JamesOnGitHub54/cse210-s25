@@ -16,7 +16,7 @@ class Program
         fraction3.SetTop(3);
         fraction3.SetBottom(4);
 
-        // Testing methods
+        // Testing methods.
         Console.WriteLine(fraction1.GetFractionString());
         Console.WriteLine(fraction1.GetDecimalValue());
         Console.WriteLine(fraction2.GetFractionString());
