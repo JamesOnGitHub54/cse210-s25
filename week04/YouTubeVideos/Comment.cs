@@ -1,5 +1,10 @@
 public class Comment
 {
-    private string _commenter;
-    private string _comment;
+    public string _commenter;
+    public string _comment;
+
+    public void Display()
+    {
+        Console.WriteLine($"{_commenter}: {_comment}");
+    }
 }

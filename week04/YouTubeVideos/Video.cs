@@ -1,8 +1,18 @@
 public class Video
 {
-    private string _title;
-    private string _author;
-    private int _length;
-    private List<string> _comments;
+    public string _title;
+    public string _author;
+    public string _length;
+    public List<Comment> _comments = new List<Comment>();
 
+    public void Display()
+    {
+        // Present core video details.
+        Console.WriteLine($"Title: {_title}\nAuthor: {_author}\nVideo length: {_length} seconds");
+        // Iterate through each comment, formatted in the Comment file.
+        foreach (Comment comment in _comments)
+        {
+            comment.Display();
+        }
+    }
 }
