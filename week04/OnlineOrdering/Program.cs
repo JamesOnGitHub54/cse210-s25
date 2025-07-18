@@ -40,5 +40,15 @@ class Program
         address2.SetCity("Malton");
         address2.SetStateOrProvince("Ontario");
         address2.SetCountry("Canada");
+
+        // Order 1
+        Console.WriteLine(customer1.GetName());
+        Console.WriteLine(address1.DisplayAddress());
+
+        Console.WriteLine();
+
+        // Order 2
+        Console.WriteLine(customer2.GetName());
+        Console.WriteLine(address2.DisplayAddress());
     }
 }
