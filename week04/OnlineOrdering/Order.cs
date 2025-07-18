@@ -1,10 +1,11 @@
 public class Order
 {
     public List<Product> _products = new List<Product>();
+    public List<Customer> _Customers = new List<Customer>();
 
-    public class TotalCost()
+    public int TotalCost()
     {
-
+        return 0;
     }
 
     public string GetPackingLabel()
@@ -16,6 +17,10 @@ public class Order
     {
         return "";
     }
+
+    
+
+    
 
     
 }
