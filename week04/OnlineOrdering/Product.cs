@@ -2,12 +2,12 @@ public class Product
 {
     private string _name;
     private int _id;
-    private float _price;
+    private double _price;
     private int _quantity;
 
-    public float TotalCost(int _quantity, float _price)
+    public double TotalCost(int _quantity, double _price)
     {
-        float _totalCost = _quantity * _price;
+        double _totalCost = _quantity * _price;
         return _totalCost;
     }
 
@@ -16,7 +16,7 @@ public class Product
         return _quantity;
     }
 
-    public float GetPrice()
+    public double GetPrice()
     {
         return _price;
     }
@@ -35,7 +35,7 @@ public class Product
         _quantity = quantity;
     }
 
-    public void SetPrice(float price)
+    public void SetPrice(double price)
     {
         _price = price;
     }
@@ -49,6 +49,5 @@ public class Product
     {
         _name = name;
     }
-
 
 }

@@ -21,5 +21,4 @@ public class Customer
         _name = name;
     }
     
-    
 }
